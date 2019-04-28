@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ProfilePage } from '../profile/profile';
+import { EditProfilePage } from '../editprofile/editprofile';
 
 @Component({
   selector: 'page-register',
@@ -15,8 +15,8 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
 
-  gotoProfilePage(){
-    this.navCtrl.push(ProfilePage);
+  gotoEditProfilePage(){
+    this.navCtrl.push(EditProfilePage);
 
   }
 }

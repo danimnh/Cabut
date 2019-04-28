@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TimelinePage } from '../timeline/timeline'
 
 @Component({
   selector: 'page-login',
@@ -13,5 +14,7 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-
+  gotoTimelinePage(){
+    this.navCtrl.push(TimelinePage);
+  }
 }
