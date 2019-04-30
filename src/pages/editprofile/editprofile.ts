@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProfilePage } from '../profile/profile'
 
 /**
  * Generated class for the EditprofilePage page.
@@ -22,8 +21,7 @@ export class EditProfilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EditProfilePage');
   }
-  gotoProfilePage(){
-    this.navCtrl.push(ProfilePage);
-
-}
+  doSave() {
+    this.navCtrl.setRoot('ProfilePage');
+  }
 }
