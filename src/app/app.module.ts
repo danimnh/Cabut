@@ -12,6 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { EditProfilePage } from '../pages/editprofile/editprofile'
+import { SettingPage } from '../pages/setting/setting';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EditProfilePage } from '../pages/editprofile/editprofile'
     RegisterPage,
     LoginPage,
     ListPage,
+    SettingPage,
     EditProfilePage
    
     
@@ -37,6 +39,7 @@ import { EditProfilePage } from '../pages/editprofile/editprofile'
     RegisterPage,
     LoginPage,
     ListPage,
+    SettingPage,
     EditProfilePage
     
   
