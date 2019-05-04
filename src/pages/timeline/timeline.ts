@@ -21,5 +21,15 @@ export class TimelinePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TimelinePage');
   }
+  doRefresh(event) {
+    this.navCtrl.push(TimelinePage)
+    //console.log('Begin async operation');
+    //biar ga error dulu jd gw push ke timelinepage, harusnya connect ke database
+
+    //setTimeout(() => {
+      //console.log('Async operation has ended');
+      //event.target.complete();
+    //}, 2000);
+  }
 
 }

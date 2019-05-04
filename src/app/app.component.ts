@@ -7,7 +7,6 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { LoginPage } from '../pages/login/login';
 import { EditProfilePage } from '../pages/editprofile/editprofile';
 
 
@@ -32,8 +31,8 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Logout', component: LoginPage, index:0, icon: 'exit' },
-      { title: 'Edit Profile', component: EditProfilePage, index:0, icon: 'contact' },
+      { title: 'Edit Profile', component: EditProfilePage, index:0, icon: 'exit' },
+      { title: 'Logout', component: HelloIonicPage, index:0, icon: 'contact' },
     ];
   }
 
