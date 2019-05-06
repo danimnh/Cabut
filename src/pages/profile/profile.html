@@ -9,21 +9,11 @@
 
 <ion-content padding>
     <ion-list>
-        <ion-item>Nama
-            </ion-item>
-        
-            <ion-item>Tanggal Lahir
-                </ion-item>
-    
-                <ion-item>Hobi
-                    </ion-item>
-    
-                    <ion-item>Domisili
-                        </ion-item>
-    
-                        <ion-item>Nomor
-                            </ion-item>
-                            
-              
+{{username}}
+<p>username : {{(profileData | async)?.username}}</p>
+<p>{{(profileData | async)?.tanggalLahir}}</p>
+<p>{{(profileData | async)?.hobi}}</p>
+<p>{{(profileData | async)?.domisili}}</p>
+{{ (profileData | async)?.hobi }}
 </ion-list>
 </ion-content>

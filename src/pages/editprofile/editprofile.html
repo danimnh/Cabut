@@ -14,32 +14,34 @@
 
 
 <ion-content padding>
+  {{username}}
   <ion-list>
-    <ion-item>
-        <ion-label floating>Nama</ion-label>
-        <ion-input type="text"></ion-input>
-        </ion-item>
-    
         <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input [(ngModel)]="profile.username"></ion-input>
+          </ion-item>
+  
+          <ion-item>
             <ion-label floating>Tanggal Lahir</ion-label>
-            <ion-input type="text"></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label floating>Hobi</ion-label>
-                <ion-input type="text"></ion-input>
-                </ion-item>
-
-                <ion-item>
-                    <ion-label floating>Domisili</ion-label>
-                    <ion-input type="text"></ion-input>
-                    </ion-item>
-
-                    <ion-item>
-                        <ion-label floating>Nomor</ion-label>
-                        <ion-input type="text"></ion-input>
-                        </ion-item>
-
-                        <button ion-button full (click)="doSave()">Save</button>
+            <ion-input [(ngModel)]="profile.tanggalLahir"></ion-input>
+         </ion-item>
+  
+         <ion-item>
+            <ion-label floating>Hobi</ion-label>
+            <ion-input [(ngModel)]="profile.hobi"></ion-input>
+         </ion-item>
+  
+         <ion-item>
+            <ion-label floating>Domisili</ion-label>
+            <ion-input [(ngModel)]="profile.domisili"></ion-input>
+         </ion-item>
+        
+         <ion-item>
+            <ion-label floating>Nomor HP</ion-label>
+            <ion-input [(ngModel)]="Nomor"></ion-input>
+         </ion-item>
+            
+         <button ion-button clear block (click)=createProfile()>Create Profile</button>
+                
 </ion-list>
 </ion-content>
