@@ -7,13 +7,32 @@
   </ion-navbar>
 </ion-header>
 
+<ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-thumbnail>
+    <ion-label>Item asdsaddasThumbnail</ion-label>
+  </ion-item>
+
 <ion-content padding>
+  <ion-list>
+<ion-item>
+   <ion-label>
+     <ion-avatar>
+        <img src="assets/imgs/profile.jpg">
+        </ion-avatar>
+        {{username}}
+      </ion-label>
+
+</ion-item>
+  </ion-list>
+    
     <ion-list>
-{{username}}
-<p>username : {{(profileData | async)?.username}}</p>
-<p>{{(profileData | async)?.tanggalLahir}}</p>
-<p>{{(profileData | async)?.hobi}}</p>
-<p>{{(profileData | async)?.domisili}}</p>
-{{ (profileData | async)?.hobi }}
+
+<h3>Username      : {{(profileData | async)?.username}}</h3>
+<h3>Tanggal Lahir : {{(profileData | async)?.tanggalLahir}}</h3>
+<h3>Hobi          : {{(profileData | async)?.hobi}}</h3>
+<h3>Domisili      : {{(profileData | async)?.domisili}}</h3>
+<h3>Hobi          : {{ (profileData | async)?.hobi }} </h3>
 </ion-list>
 </ion-content>
