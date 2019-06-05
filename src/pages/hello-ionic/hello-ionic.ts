@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,MenuController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { LoginPage } from '../login/login';
   
@@ -8,11 +8,10 @@ import { LoginPage } from '../login/login';
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-
   username : string;
   password : string;
-  constructor(
-    public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {}
+    
 
   gotoRegisterPage(){
 this.navCtrl.push(RegisterPage);

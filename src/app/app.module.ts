@@ -8,7 +8,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -36,7 +36,6 @@ const firebaseAuth = {
     ItemDetailsPage,
     RegisterPage,
     LoginPage,
-    ListPage,
     EditProfilePage,
     MenuPage 
    
@@ -56,7 +55,6 @@ const firebaseAuth = {
     ItemDetailsPage,
     RegisterPage,
     LoginPage,
-    ListPage,
     EditProfilePage,
     MenuPage
     
